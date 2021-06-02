@@ -17,10 +17,13 @@ The steps below were followed in the time_series notebook:
 
 Based on the results, it was aimend to answer the following questions:
 
-1. Based on your time series analysis, would you buy the yen now?
+1. Based on your time series analysis, would you buy the yen now? 
+    - No. The model shows the price increasing in the short term, but the model is no accurate. 
 2. Is the risk of the yen expected to increase or decrease?
+    - The risk is expected to increase in the short term, based on the model. The model, however, is not accurate and does not predict it better than the mean. 
 3. Based on the model evaluation, would you feel confident in using these models for trading?
-
+    - No. The model shows very poor metrics (r-squared, P values, AIC and BIC)
+    
 #### Linear Regression Forecasting
 
 In this notebook, it was built a Scikit-Learn linear regression model to predict Yen futures ("settle") returns with *lagged* Yen futures returns and categorical calendar seasonal effects (e.g., day-of-week or week-of-year seasonal effects).
@@ -36,5 +39,5 @@ The steps below were followed in the regression_analysis notebook:
 Based on the results, it was aimend to answer the following question:
 
 * Does this model perform better or worse on out-of-sample data compared to in-sample data?
-
+    - Out of sample performed worse than in-sample (in sample with higher RMSE). However, we note that this model is not good since it has a very low RMSE, so the model does not explain better than the mean of the values. 
 
